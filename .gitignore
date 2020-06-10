@@ -1,1 +1,4 @@
 node_modules
+gatsby-source/.cache
+gatsby-source/node_modules
+gatsby-source/public

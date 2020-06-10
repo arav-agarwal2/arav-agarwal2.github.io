@@ -1,5 +1,5 @@
 ---
-date: Jun 02, 2020 4:44 PM
+date: 2020-06-07
 title: Gatsby Development 101 - A Condensed Tutorial
 description: "A condensed version of the standard Gatsby tutorial"
 ---
@@ -430,3 +430,4 @@ With that done - you're now familiar enough with Gatsby to start moving forward 
 - If you have a webpage, and are trying to do an incremental update of Gatsby code to a certain route, you can do this through the following approach:
     1. In the gatsby-config.js file, we need to change pathPrefix to the subroute the file will be posted in. This will ensure that all routes include that prefix to them before we use them. 
     2. Instead of building normally, we need to build with `gatsby build --prefix-paths` . This allows us to include these prefixes, and thus ensure that you can make that update easier.
+- If you're using dates in Gatsby and trying to get its system to recognize your datetimes as strings, you need to convert to YYYY-MM-DD:TIME format, as otherwise it simply will say you have a string, or something more insiduous. This caused me 2 hours of debugging, so if you get `"Unknown argument "formatString" on field "date" of type "MarkdownRemarkFrontmatter"` when trying to edit a format string, it's probably a problem with Gatsby more than anything else, and you'll need to either reformat your dates, which is the easier way, or try to muddle through Gatsby's type declaration API, something I'm a bit intimidated with tbh. 
