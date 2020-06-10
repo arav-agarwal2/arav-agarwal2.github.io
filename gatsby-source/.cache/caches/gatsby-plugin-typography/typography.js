@@ -1,0 +1,1 @@
+module.exports = require("/home/arav/arav-agarwal2.github.io/gatsby-source/src/utils/typography")
