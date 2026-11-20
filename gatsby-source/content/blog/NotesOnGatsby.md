@@ -83,7 +83,7 @@ A few last notes of importance before we continue with this high-level overview.
 
 - If you're familiar with older React versions, it might seem weird that we're using the less expressive "functional" syntax instead of the more traditional "class-based" syntax. React now has a feature known as "React-Hooks", which makes functional components easier to use with state, and allow us to have stateful components without some of the pitfalls of Javascript classes. I'd recommend using them, if only to test them out for a bit!
 - Additionally, as each of these components are functions, it makes sense that we should be able to pass information to them. We can do that by passing stuff similar to attributes, so if we had `<Header prop1="LOL"/>` , we're passing 
-"LOL" into `prop1` input of our function.
+  "LOL" into `prop1` input of our function.
     - You can access this anywhere in your React Component via `props.prop1` , or other names
     - Additionally, you can also specify the input and then use that to pass it through. I'd choose this approach for most functional argument passing, but the above approach can be useful if you're trying to do something complex
 
